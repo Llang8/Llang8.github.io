@@ -1,0 +1,123 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+/* Define global CSS variables */
+/* Reset HTML styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab';
+  background: #F2F2F2;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #f2f2f2 !important;
+}
+
+/* BEGIN HEADER STYLES */
+header {
+  background: #DA836E;
+  height: 400px;
+  width: 100vw;
+  color: #f2f2f2;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(218, 131, 110, 0.5)), to(rgba(218, 131, 110, 0.5))), url("../assets/chicago.jpeg");
+  background-image: linear-gradient(0deg, rgba(218, 131, 110, 0.5), rgba(218, 131, 110, 0.5)), url("../assets/chicago.jpeg");
+  background-size: 800px auto;
+  /* START CSS FOR HAMBURGER */
+}
+
+header .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #DA836E;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header .hamburger {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+header .hamburger .ham {
+  background: #f2f2f2;
+  height: 5px;
+  width: 40px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+}
+
+header .highlighted-text {
+  color: #DA836E;
+  font-weight: bold;
+}
+
+header .header-text {
+  font-size: 24px;
+  padding: 50px 25px 25px 25px;
+}
+
+header .header-text p {
+  margin: 0;
+}
+
+header h1 {
+  top: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+header .nav {
+  position: fixed;
+  z-index: 1000;
+  background: #DA836E;
+  color: #f2f2f2;
+  height: 100vh;
+  width: 80vw;
+  min-width: 300px;
+  top: 0;
+  left: -100%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  overflow-y: auto;
+}
+
+header .nav ul {
+  padding: 50px 0px 0px 0px;
+}
+
+header .nav li {
+  list-style-type: none;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+header .close-nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+header .nav-active {
+  left: 0;
+  -webkit-box-shadow: 10px 0px 200px black;
+          box-shadow: 10px 0px 200px black;
+}
+
+/* END HEADER STYLES */
+/*# sourceMappingURL=main.css.map */

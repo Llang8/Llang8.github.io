@@ -1,0 +1,117 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+/* Define global CSS variables */
+$main-font-color: #666666;
+$white-font-color: #f2f2f2;
+$dred-font-color: #692515;
+$main-bg-color: #f1f1f1;
+$red-bg-color: #DA836E;
+$red-transparent: rgba(218,131,110,.5);
+
+/* Reset HTML styles */
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab';
+    background: #F2F2F2;
+    overflow-x:hidden;
+}
+a {
+    text-decoration: none;
+    color: $white-font-color !important;
+}
+
+/* BEGIN HEADER STYLES */
+header {
+    background: $red-bg-color;
+    height: 400px;
+    width: 100vw;
+    color: $white-font-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(0deg,$red-transparent,$red-transparent),url('../assets/chicago.jpeg');
+    background-size: 800px auto;
+
+
+    .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $red-bg-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    /* START CSS FOR HAMBURGER */
+    .hamburger {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        cursor: pointer;
+
+        .ham {
+            background: $white-font-color;;
+            height: 5px;
+            width: 40px;
+            border-radius: 25px;
+            margin-bottom: 5px;
+        }
+
+    }
+
+    .highlighted-text {
+        color: $red-bg-color;
+        font-weight: bold;
+    }
+
+    .header-text {
+        font-size: 24px;
+        padding: 50px 25px 25px 25px;
+        p {
+            margin: 0;
+        }
+    }
+
+    h1 {
+        top: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .nav {
+        position: fixed;
+        z-index: 1000;
+        background: $red-bg-color;
+        color: $white-font-color;
+        height: 100vh;
+        width: 80vw;
+        min-width: 300px;
+        top: 0;
+        left: -100%;
+        transition: all 1s ease;
+        overflow-y: auto;
+        
+        ul {
+            padding: 50px 0px 0px 0px;
+        }
+
+        li {
+            list-style-type: none;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    }
+
+    .close-nav {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .nav-active {
+        left: 0;
+        box-shadow: 10px 0px 200px rgba(0, 0, 0, 1);
+    }
+}
+/* END HEADER STYLES */
