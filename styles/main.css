@@ -26,37 +26,6 @@ header {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(218, 131, 110, 0.5)), to(rgba(218, 131, 110, 0.5))), url("../assets/chicago.jpeg");
   background-image: linear-gradient(0deg, rgba(218, 131, 110, 0.5), rgba(218, 131, 110, 0.5)), url("../assets/chicago.jpeg");
   background-size: 800px auto;
-  /* START CSS FOR HAMBURGER */
-}
-
-header .header-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #DA836E;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-header .hamburger {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  cursor: pointer;
-}
-
-header .hamburger .ham {
-  background: #f2f2f2;
-  height: 5px;
-  width: 40px;
-  border-radius: 25px;
-  margin-bottom: 5px;
 }
 
 header .highlighted-text {
@@ -79,7 +48,7 @@ header h1 {
   text-align: center;
 }
 
-header .nav {
+.nav {
   position: fixed;
   z-index: 1000;
   background: #DA836E;
@@ -94,30 +63,97 @@ header .nav {
   overflow-y: auto;
 }
 
-header .nav ul {
+.nav ul {
   padding: 50px 0px 0px 0px;
 }
 
-header .nav li {
+.nav li {
   list-style-type: none;
   font-size: 40px;
   text-align: center;
   margin-bottom: 5px;
 }
 
-header .close-nav {
+.close-nav {
   position: absolute;
   top: 10px;
   right: 10px;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }
 
-header .nav-active {
-  left: 0;
+.nav-active {
+  -webkit-transform: translateX(125%);
+          transform: translateX(125%);
   -webkit-box-shadow: 10px 0px 200px black;
           box-shadow: 10px 0px 200px black;
 }
 
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #DA836E;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-top h1 {
+  top: 0;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* HIDE DESKTOP HEADER BY DEFAULT */
+.desktop-header {
+  display: none;
+}
+
+/* START CSS FOR HAMBURGER */
+.hamburger {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.hamburger .ham {
+  background: #f2f2f2;
+  height: 5px;
+  width: 40px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+}
+
 /* END HEADER STYLES */
+/* BEGIN FOOTER STYLES */
+footer {
+  width: 100vw;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+footer h1 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+footer p {
+  margin: 5px;
+}
+
+footer a {
+  color: #975c5c !important;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* END FOOTER STYLES */
 /*# sourceMappingURL=main.css.map */

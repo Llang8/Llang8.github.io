@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lucas Lang - FullStack Developer</title>
+    <link rel="stylesheet" href="./styles/desktop.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/work.css">
+    <link rel="stylesheet" href="./styles/skills.css">
 </head>
 <body>
     <header>
-        <div class="header-top">
+        <div class="header-top mobile-header">
             <div class="hamburger" onclick="toggleNav()">
                 <div class="ham"></div>
                 <div class="ham"></div>
                 <div class="ham"></div>
             </div>
             <h1>Lucas Lang</h1>
+        </div>
+        <div class="header-top desktop-header">
+            <h1>Lucas Lang</h1>
+            <nav class="right-controls">
+                <ul>
+                    <li><a target="_blank" href="https://drive.google.com/file/d/1cTEqNoS8J_fTaIOS_bUjGSz21D1DhtGC/view?usp=sharing">Resume</a></li>
+                    <li><a target="_blank" href="https://github.com/Llang8">GitHub</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/lucas-lang-999297164/">LinkedIn</a></li>
+                    <li><a target="_blank" href="https://codepen.io/llang8/">CodePen</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="header-text">
             <p>Hi, I'm Lucas.</p>
@@ -26,10 +39,10 @@
         </div>
         <nav id="nav" class="nav">
             <ul class="nav-list">
-                <li>Home</li>
                 <li>Resume</li>
                 <li><a target="_blank" href="https://github.com/Llang8">GitHub</a></li>
                 <li><a target="_blank" href="https://www.linkedin.com/in/lucas-lang-999297164/">LinkedIn</a></li>
+                <li><a target="_blank" href="https://codepen.io/llang8/">CodePen</a></li>
             </ul>
             <img src="./assets/X-white.png" height="30px" onclick="toggleNav()" class="close-nav">
         </nav>
@@ -47,35 +60,36 @@
                         It allows interviewers to connect with candidates in 
                         a private room equipped with a code editor, a text messenger,
                         and video/voice chat capabilities.</p>
-                    <a href="">See Code</a>
+                    <p>Technology: VueJS, NodeJS, Flask, Python, SocketIO, and PostgreSQL hosted on Amazon RDS</p>
+                    <a href="https://github.com/Llang8/vue-blueboard">See Code</a>
                     <a href="">Live Version</a>
-                    <a class="read-more" href="">Read More</a>
+                    <a class="read-more" target="_blank" href="https://github.com/Llang8/vue-blueboard/blob/master/README.md">Read More</a>
                 </div>
             </div>
             <div class="work-card">
                 <img src="./assets/blueboard.PNG" alt="">
                 <div class="work-content">
-                    <h4>BlueBoard</h4>
-                    <p>BlueBoard is an online whiteboarding tool.  
-                        It allows interviewers to connect with candidates in 
-                        a private room equipped with a code editor, a text messenger,
-                        and video/voice chat capabilities.</p>
-                    <a href="">See Code</a>
+                    <h4>Angular E-Commerce</h4>
+                    <p>This is a mock, tech-based e-commerce platform that pulls products from a Flask backend and displays them
+                        on a products page. The user can select a product which pulls up a page for that specific product where they
+                        can add the item to their cart. They can add multiple items, view their cart, and checkout.</p>
+                    <p>Technology: AngularJS, Flask, Python, Stripe, and PostgreSQL hosted on Amazon RDS</p>
+                    <a href="https://github.com/Llang8/angular-ecommerce">See Code</a>
                     <a href="">Live Version</a>
-                    <a class="read-more" href="">Read More</a>
+                    <a class="read-more" target="_blank" href="https://github.com/Llang8/angular-ecommerce/blob/master/README.md">Read More</a>
                 </div>
             </div>
             <div class="work-card">
-                <img src="./assets/blueboard.PNG" alt="">
+                <img src="./assets/dbb.gif" alt="">
                 <div class="work-content">
-                    <h4>BlueBoard</h4>
-                    <p>BlueBoard is an online whiteboarding tool.  
-                        It allows interviewers to connect with candidates in 
-                        a private room equipped with a code editor, a text messenger,
-                        and video/voice chat capabilities.</p>
-                    <a href="">See Code</a>
-                    <a href="">Live Version</a>
-                    <a class="read-more" href="">Read More</a>
+                    <h4>DiscordBotBuilder</h4>
+                    <p>DiscordBotBuilder is a desktop application for the popular voice, text, and video communication app Discord. Many Discord
+                        servers have bots on that message users, message the server, and control the flow of the chat. This app
+                        allows server owners with no programming experience to build and run their own basic discord bots
+                        without touching a line of code.</p>
+                    <p>Technology: VueJS, NodeJS, Firebase, Electron, and Discord.js</p>
+                    <a target="_blank" href="https://github.com/Llang8/discord-bot-builder-electron">See Code</a>
+                    <a class="read-more" href="https://github.com/Llang8/discord-bot-builder-electron/blob/master/README.md">Read More</a>
                 </div>
             </div>
         </div>
@@ -83,8 +97,40 @@
             <div class="section-title">
                 <h1>Skills</h1>
             </div>
+            <div class="skill-section">
+                <h2>Frontend</h2>
+                <ul>
+                    <li>VueJS</li>
+                    <li>Angular</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <h2>Backend</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>NodeJS</li>
+                    <li>Express</li>
+                    <li>Flask</li>
+                    <li>Java</li>
+                </ul>
+                <h2>Other</h2>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>SocketIO</li>
+                    <li>Firebase</li>
+                    <li>Amazon AWS</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
         </div>
     </main>
+    <footer>
+        <h1>Contact Me</h1>
+        <p>lucaslang8@gmail.com</p>
+        <a href="https://www.linkedin.com/in/lucas-lang-999297164/" target="_blank">LinkedIn</a>
+    </footer>
     <script src='main.js'></script>
 </body>
 </html>

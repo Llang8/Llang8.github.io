@@ -1,0 +1,36 @@
+@media only screen and (min-width: 700px) {
+  .mobile-header {
+    display: none !important;
+  }
+  .desktop-header {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+    padding: 0px 25px;
+  }
+  .desktop-header .right-controls ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .desktop-header .right-controls ul li {
+    list-style-type: none;
+    margin-right: 10px;
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+  }
+  .desktop-header .right-controls ul li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: #c8c8c8;
+  }
+  /* Hide the side nav for mobile */
+  .nav {
+    display: none;
+  }
+}
+/*# sourceMappingURL=desktop.css.map */
